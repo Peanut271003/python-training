@@ -1,6 +1,7 @@
 # CTRL "+" ,
-print("hello world")
-print("My name is Hai")
+print("hello world") # Duplicate dùng Shift + Alt + Down
+print("My name is Hai") # di chuyen dong Alt + UP, Alt + DOWN 
+print("❤😋") # Search lenh Ctrl + Shift + P
 # Win + .
-print("❤😋")
+print("❤😋") # Ctl + J open terminal
 
