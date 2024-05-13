@@ -8,7 +8,7 @@
 
   -- ĐẾM SỐ LƯỢNG - SUM()
     -- SELECT SUM(Column_name)
-	-- FROM table_name;
+	  -- FROM table_name;
 
 -- Tính tổng giá trị của một cột. 
 -- Nếu bất kỳ giá trị trong cột là NULL, kết quả của hàm
@@ -17,7 +17,7 @@
 
   -- ĐẾM SỐ LƯỢNG - AVG()
     -- SELECT AVG(Column_name)
-	-- FROM table_name;
+	  -- FROM table_name;
 -- Tính giá trị trung bình cho một cột.
 -- Nếu tất cả các giá trị trong cột là NULL, kết quả của hàm AVG sẽ là NULL.
 -- Nếu chỉ một vài giá trị là NULL, AVG sẽ bỏ qua các giá trị NULL và tính trung bình cho các giá trị khác 
