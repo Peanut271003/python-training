@@ -111,11 +111,43 @@ FROM [dbo].[Products] P
 JOIN SalesPerProduct SPP
 ON SPP.ProductID = P.ProductID;
 -- RUN DUOC 77 ROWS 
+-----------------------------------------------------------
+-- BAI TAP 2 VS BAI TAP 3 THẤY NÓ CẤN CẤN
+
 
 -- BAI TAP 2
 	-- SỬ DỤNG CTE ĐỂ TÍNH TOÁN TỔNG DOANH SỐ BÁN HÀNG THEO TỪNG
 	-- KHÁCH HÀNG VÀ SAU ĐÓ SẮP XẾP DANH SÁCH KHÁCH HÀNG THEO TỔNG 
 	-- DOANH SỐ GIẢM DẦN
 --
-SELECT
+WITH SalesPerCustomer  AS (
+		SELECT OD.OrderID, SUM(OD.Quantity*OD.UnitPrice) AS "TotalOrders"
+		FROM [dbo].[Order Details] OD
+		GROUP BY OD.OrderID
+)
+SELECT DISTINCT  O.OrderID,
+		O.CustomerID, 
+		SPC.TotalOrders
 FROM [dbo].[Orders] O
+JOIN SalesPerCustomer SPC
+ON SPC.OrderID = O.OrderID
+ORDER BY "TotalOrders" DESC;
+-- RUN DUOC 830 ROWS
+
+-- BAI TAP 3
+	-- SỬ DỤNG CTE TÍNH TỔNG DOANH SỐ BÁN HÀNG THEO NĂM TỪ BẢNG
+	-- "Orders" và "Order Details"
+--
+WITH SalesPerProduct  AS (
+			SELECT OD.OrderID, SUM(OD.Quantity*OD.UnitPrice) AS "TotalSales"
+			FROM [dbo].[Order Details] OD
+			GROUP BY OD.OrderID
+)
+
+SELECT  O.OrderID,
+		YEAR(O.OrderDate) AS "YEAR",
+		"TotalSales"
+FROM [dbo].[Orders] O
+JOIN SalesPerProduct SPP
+ON SPP.OrderID = O.OrderID;
+
