@@ -37,10 +37,18 @@ print(x > y) # "a">"b" False
 not None # True
 not 0 # True
 
+#Cách 1
 n = input("Nhập vào số nguyên: ")
 n_as_int = int(n)
 n_as_int += 10
 n_as_int *= 3
 n_as_int -= 9
 print("n =", n_as_int)
+#Cách 2
+a = int(input("Nhập vào số nguyên: "))
+a += 10
+a *= 3
+a -= 9
+print("a =", a)
 
+        
