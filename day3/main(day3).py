@@ -22,13 +22,13 @@ print('a' != 'b') #True
 # 1 > 2 and 2 > 3
 print(True and True) # True
 print(True and False) # False
-print(False and False) # False
+print(False and False) # False sẽ trả về giá thị False thứ 2
 # Ta nhan Ctrl + Shift + L để bôi đen các từ giống nhau
 # Sau khi ta Ctrl + Shift + L thì nó sẽ bôi đen các từ giống nhau sau đó ta dùng 
 # Ctrl + D để chọn thay đổi giá trị đó
 print(True or True) # True
 print(True or False) # True
-print(False or False) # False
+print(False or False) # False trả về giá trị False đầu tiên
 print(False or True) # True
 print(not True) # False
 print(not False) # True
@@ -123,8 +123,6 @@ print(lst) # kq tre ve la ['My', 'name', 'is', 'Hai'] nay dc goi la list
 s = "HEllo WorlD"
 lower_case = s.lower()
 print(lower_case) # kq tra ve la hello world
-
-
 
 
 
