@@ -31,9 +31,9 @@ print(x > y) # "a">"b" False
 .5 > 1 # False
 
 0 and 1 # 0
-'' or None #
+'' or None # None
 3 and 4 or 0 # 4
-'a' or 1 # 1
+'a' or 1 # 'a'
 not None # True
 not 0 # True
 
@@ -49,6 +49,7 @@ a = int(input("Nhập vào số nguyên: "))
 a += 10
 a *= 3
 a -= 9
-print("a =", a)
+# print("a =", a)
+print(f"a = {a}")
 
         
