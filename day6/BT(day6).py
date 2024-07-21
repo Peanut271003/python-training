@@ -42,7 +42,7 @@ set_a = set()
 
 # a, Thêm "Anna" vào set_a
 set_a.add("Anna")
-print(set_a)  # Return {'Anna'}
+print(set_a, "\n")  # Return {'Anna'}    ***Luu y cai "\n" la no xuong dong(kieu cach dong)
 
 # b, Thêm một tuple ("Kenny", "Jen", "Danny")
 set_a.update(("Kenny", "Jen", "Danny"))
