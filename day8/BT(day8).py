@@ -54,6 +54,9 @@ if a == 0:
 else:
     print(f"Phuong trinh co 1 nghiem duy nhat x = {-b/a}")
 
+
+
+
 # 5. Giải và biện luận phương trình hai 1 ẩn ax^2 + bx + c = 0 (ẩn x, a, b, c là 3 số cho trước)
 a = eval(input("Nhap vao he so a = "))
 b = eval(input("Nhap vao he so b = "))

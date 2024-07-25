@@ -4,8 +4,8 @@
 print(1 + 2)
 print(1 - 2)
 print(1 * 2)
-print(3 / 2) # 3//2 =1.5 - float   nay ra so thuc
-print(3 // 2) # 3//2 =1 - int  nay ra so thuc
+print(3 / 2) # 3//2 = 1.5 - float   nay ra so thuc
+print(3 // 2) # 3//2 = 1 - int  nay ra so nguyen 
 print(5 ** 2 ) # 25  day la luy thua
 print(3 % 2) # 1 lay phan du 
 print(7 % 4) # 3 lay phan du la 7 chia 4 du 3
