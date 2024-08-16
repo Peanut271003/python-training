@@ -140,7 +140,7 @@ student = {
 # print(json.dumps(student, indent = 4))
 
 
-# H ta sữ comment dòng student.update(id = "SV004", gender = "male") lại để chạy cái update khác
+# H ta sẽ comment dòng student.update(id = "SV004", gender = "male") lại để chạy cái update khác
 
 info = {
     "id": "SV005",
